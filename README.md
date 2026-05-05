@@ -23,14 +23,10 @@ Each segment between two stops is colored by the average load departing the upst
 
 ---
 
-## Demo
-
-> _Drop your screenshots into `docs/screenshots/` after running the app locally._
-> _Recommended captures: full-app view with a busy route loaded, map zoomed-in showing colored segments and a popup, chart showing trend across signups._
-
+## Sample Output
 | | |
 |---|---|
-| ![Sample Output](sample/map_chart_sample.png) |
+| ![Sample Output](sample/map_chart_sample.png)|
 
 ---
 
