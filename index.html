@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transit Load Viewer</title>
+
+  <!-- Leaflet (map) -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+
+  <!-- Chart.js (trend line) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Transit Load Viewer</h1>
+    <div class="filters">
+      <label>
+        Signup
+        <select id="signup-select"></select>
+      </label>
+      <label>
+        Route
+        <select id="route-select"></select>
+      </label>
+      <label>
+        Direction
+        <select id="direction-select"></select>
+      </label>
+      <label>
+        Pattern
+        <select id="pattern-select"></select>
+      </label>
+      <span id="status" class="status"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="map-section">
+      <div id="map"></div>
+      <div id="legend" class="legend"></div>
+    </section>
+
+    <section id="chart-section">
+      <div class="chart-header">
+        <h2>Route average load by signup</h2>
+        <span class="chart-subtitle" id="chart-subtitle"></span>
+      </div>
+      <canvas id="trend-chart"></canvas>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
