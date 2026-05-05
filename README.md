@@ -2,7 +2,7 @@
 
 A local web application for visualizing transit passenger load factors across stops, directions, and trip patterns — used to measure the impact of service changes between scheduling signups.
 
-> **Status:** Demo / portfolio project. Loads are synthesized from a deterministic model on top of GTFS schedule geometry. The architecture is designed to drop in real automatic passenger counter (APC) data without touching the frontend.
+> **Status:** Demo . Loads are synthesized from a deterministic model on top of GTFS schedule geometry. The architecture is designed to drop in real automatic passenger counter (APC) data without touching the frontend.
 
 ---
 
@@ -197,4 +197,5 @@ MIT — see [LICENSE](LICENSE).
 
 ## Author
 
-[Your Name](https://github.com/yourusername) — replace this line with your own attribution before publishing.
+Built by Andrew Reyna, a transit planner / data analyst based in San Antonio.
+with a background in Urban Planning. Find me at adrsub22@gmail.com
