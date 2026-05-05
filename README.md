@@ -30,7 +30,7 @@ Each segment between two stops is colored by the average load departing the upst
 
 | | |
 |---|---|
-| ![Map view](screenshots/Map Sample.png) | ![Chart and filters](docs/screenshots/chart-detail.png) |
+| ![Sample Output](sample/map_chart_sample.png) |
 
 ---
 
